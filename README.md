@@ -1,6 +1,8 @@
-# GA20-Marlin-1.1.x
+# Geeetech A20 Marlin-1.1.x Bugfix
  
-This is a firmware update for my Geeetech A20, and is based on Marlin 1.1.x bugfix.
+This is a firmware update for my Geeetech A20, and is based on Marlin 1.1.x bugfix
+(code name: Goro.Arms)
+
 Contains various changes:
 
     Disable endstop Z min (only works with blotouch installed)
