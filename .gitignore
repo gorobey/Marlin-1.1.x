@@ -110,7 +110,8 @@ tags
 *.app
 *.i*86
 *.x86_64
-#*.hex
+*.hex
+
 
 # Debug files
 *.dSYM/
@@ -118,7 +119,10 @@ tags
 
 # PlatformIO files/dirs
 .pio*
-.pioenvs
+.pioenvs/*
+.pioenvs/*/*
+!.pioenvs/megaatmega2560/firmware.hex
+
 .piolibdeps
 lib/readme.txt
 

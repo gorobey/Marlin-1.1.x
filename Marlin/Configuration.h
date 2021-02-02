@@ -165,6 +165,12 @@
 #define PAUSED_COMMAND "\nM300 S440 P200\nM1"
 #define END_COMMAND "\nG4 S1\nM104 S0\nM140 S0\nM300 S440 P1000"
 
+/**
+ * Commands to execute at the end of G29 probing.
+ * Useful to retract or move the Z probe out of the way.
+ */
+#define Z_PROBE_END_SCRIPT "G4\nM500\nM420 S1\nG4 S1" PARK_AXIS END_COMMAND
+
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
 // For the other hotends it is their distance from the extruder 0 hotend.
@@ -1065,12 +1071,6 @@
   #define LEVEL_CORNERS_Z_HOP 2.0   // (mm) Move nozzle up before moving between corners
   //#define LEVEL_CENTER_TOO        // Move to the center after the last corner
 #endif
-
-/**
- * Commands to execute at the end of G29 probing.
- * Useful to retract or move the Z probe out of the way.
- */
-#define Z_PROBE_END_SCRIPT "G4\nM500\nM420 S1\nG4 S1" PARK_AXIS END_COMMAND
 
 
 // @section homing
